@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sadekelâm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #f5f1e9;
-      color: #3e3e3e;
-      padding: 50px;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.7;
-    }
-
-    h1 {
-      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-      font-size: 48px;
-      font-weight: normal;
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background-color: #fdfcf9;
+      color: #2c2c2c;
       text-align: center;
-      margin-bottom: 0;
+      padding: 2rem;
     }
-
-    h2 {
-      font-size: 18px;
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav a {
+      color: #5f4b32;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #8c6e52;
+    }
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      margin-top: 6rem;
+      color: #5a3e2b;
+    }
+    .subtitle {
+      font-size: 1.2rem;
       font-style: italic;
-      text-align: center;
-      color: #555;
-      margin-top: 5px;
-      margin-bottom: 40px;
+      margin-top: -1rem;
+      color: #7c6751;
     }
-
-    p {
-      font-size: 18px;
+    .intro {
+      max-width: 800px;
+      margin: 3rem auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #3a2c20;
     }
   </style>
 </head>
 <body>
-  <h1>Sadekelâm</h1>
-  <h2>Das Notizbuch eines Herzens</h2>
+  <nav>
+    <a href="gedankensamen.html">Gedankensamen</a>
+    <a href="zurueckfluestern.html">Zurückflüstern</a>
+  </nav>
 
-  <p>
-    Willkommen – oder vielleicht; Dein Dasein schmückt meine Freude umrahmt von Seligkeit – zu wissen, dass dein Weg dich hierher trug – ob durch Zufall oder vielleicht soll es so sein.  
-    Durch das leise Ziehen unsichtbarer Fäden, die das Herz kennt, bevor der Verstand es begreift.  
-    Dies ist ein Ort, an dem Worte wie Wasser fließen, frei von Form und Pflicht.  
-    Sie sind geschrieben für jene, die den Mut besitzen, zu fühlen, was sonst verborgen bleibt –  
-    das eigene Herz, das leise Seufzen des Seins, den bittersüßen Geschmack einer Welt,  
-    die wir selbst erschaffen und allzu oft vergessen zu lieben.  
-    Ein kleines Heftchen, aufgeschlagen, wenn das Herz sich regt.  
-    Ein Notizbuch – nein, eine Zuflucht aus Tinte und Licht.  
-    Ein Ort, der inmitten des Lärms dieser bunten, zu grellen, zu schnellen Welt  
-    den sanften Klang der Stille bewahrt –  
-    wo ruhige Seelen sich finden und laute Seelen vielleicht heilen.  
-    <br><br>
-    Freue mich, wenn ich dir „Gedankensamen“ setzen kann,  
-    die vielleicht, mit ganz viel Glück meinerseits,  
-    einen Blumenkranz bilden – der dann ist deins.  
-    So blättere ein wenig, verirre dich in Zeilen,  
-    lausche dem, was zwischen den Worten wohnt.  
-    Vielleicht entdeckst du dich,  
-    in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch.
-  </p>
+  <h1 class="title">Sadekelâm</h1>
+  <div class="subtitle">Das Notizbuch eines Herzens</div>
+
+  <div class="intro">
+    <p>Willkommen – oder vielleicht; Dein Dasein schmückt meine Freude umrahmt von Seligkeit – zu wissen, dass dein Weg dich hierher trug – ob durch Zufall oder vielleicht soll es so sein. Durch das leise Ziehen unsichtbarer Fäden, die das Herz kennt, bevor der Verstand es begreift.</p>
+
+    <p>Dies ist ein Ort, an dem Worte wie Wasser fließen, frei von Form und Pflicht. Sie sind geschrieben für jene, die den Mut besitzen, zu fühlen, was sonst verborgen bleibt – das eigene Herz, das leise Seufzen des Seins, den bittersüßen Geschmack einer Welt, die wir selbst erschaffen und allzu oft vergessen zu lieben.</p>
+
+    <p>Ein kleines Heftchen, aufgeschlagen, wenn das Herz sich regt. Ein Notizbuch – nein, eine Zuflucht aus Tinte und Licht. Ein Ort, der inmitten des Lärms dieser bunten, zu grellen, zu schnellen Welt den sanften Klang der Stille bewahrt – wo ruhige Seelen sich finden und laute Seelen vielleicht heilen.</p>
+
+    <p>Freue mich, wenn ich dir "Gedankensamen" setzen kann, die vielleicht, mit ganz viel Glück meinerseits, einen Blumenkranz bilden – der dann ist: deins. So blättere ein wenig, verirre dich in Zeilen, lausche dem, was zwischen den Worten wohnt. Vielleicht entdeckst du dich – in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch.</p>
+  </div>
 </body>
 </html>
