@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gedankensamen</title>
   <style>
     body {
-      font-family: serif;
-      background-color: #fdfcf8;
+      font-family: Georgia, serif;
+      background-color: #fefdf9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
       text-align: center;
+      margin-bottom: 40px;
     }
-    .seed-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      margin-top: 50px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    .seed {
-      width: 200px;
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
       transition: transform 0.3s ease;
-    }
-    .seed:hover {
-      transform: scale(1.05);
-    }
-    .seed-title {
-      margin-top: 10px;
-      font-size: 1.2em;
-      color: #444;
-    }
-    a {
       text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-title {
+      padding: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
   <h1>Gedankensamen</h1>
-
-  <div class="seed-container">
-    <a href="ehrlichkeit.html">
-      <img src="Gedankensamen/images/ehrlichkeit.jpg" alt="Ehrlichkeit" class="seed">
-      <div class="seed-title">Ehrlichkeit</div>
+  <div class="grid">
+    <a class="card" href="ehrlichkeit.html">
+      <img src="Gedankensamen/images/ehrlichkeit.jpg" alt="Ehrlichkeit">
+      <div class="card-title">Ehrlichkeit</div>
     </a>
+    <!-- Hier kommen in Zukunft weitere Samen -->
   </div>
-
 </body>
 </html>
