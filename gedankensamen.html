@@ -5,63 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gedankensamen</title>
   <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f7f5f2;
+      color: #3b3b3b;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
     .preview-box {
-  ...
-  margin: 50px auto;
-  max-width: 800px;
+      display: flex;
+      align-items: center;
+      background-color: #fffdfb;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
 
-}
+    .seed-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
 
-.seed-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: transparent;
-  margin-right: 20px;
-  border: 2px solid #ddd;
-  transition: transform 0.3s ease;
-}
+    .text-part {
+      flex: 1;
+    }
 
-.seed-image {
-  ...
-  border: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .title-link {
+      font-size: 26px;
+      color: #6b4f3b;
+      text-decoration: none;
+    }
 
-.text-content {
-  flex: 1;
-}
+    .title-link:hover {
+      text-decoration: underline;
+    }
 
-.title-link {
-  font-size: 1.5em;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.title-link {
-  color: #6b4f3b; 
-}
-
-.excerpt {
-  color: #a07f63; 
-}
-
+    .excerpt {
+      font-style: italic;
+      font-size: 15px;
+      color: #a07f63;
+      margin-top: 8px;
+    }
 
   </style>
 </head>
 <body>
-
- <div class="preview-box">
-  <a href="ehrlichkeit.html">
-    <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit Bild" class="seed-image" />
-  </a>
-  <div class="text-content">
-    <a href="ehrlichkeit.html" class="title-link">Ehrlichkeit</a>
-    <p class="excerpt">„Ein großes Wort, glänzend und klar – wie der Deckel einer Keksdose...“</p>
+  <div class="container">
+    <div class="preview-box">
+      <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit" class="seed-image"/>
+      <div class="text-part">
+        <a class="title-link" href="ehrlichkeit.html">Ehrlichkeit</a>
+        <div class="excerpt">
+          „Mist, ich dachte, ich wär weiter.“ – der Satz, den wir verschlucken. Doch nur wer mutig genug ist, seine eigenen Schatten zu küssen...
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
 </body>
 </html>
