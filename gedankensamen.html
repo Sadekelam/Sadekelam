@@ -5,64 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gedankensamen</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #fdfaf5;
-      color: #2e2e2e;
-      padding: 2em;
-    }
-    .seed-container {
-      display: flex;
-      align-items: center;
-      max-width: 800px;
-      margin: 0 auto 3em auto;
-      background-color: transparent;
-    }
-    .seed-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      background-color: transparent; 
-      border: none; 
-      padding: 0;   
-     }
+    .preview-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
 
-    .seed-text {
-      flex: 1;
-    }
-    .seed-text h2 {
-      margin: 0;
-      font-size: 1.5em;
-    }
-    .seed-text p {
-      font-size: 0.9em;
-      font-style: italic;
-      margin-top: 0.4em;
-      color: #555;
-    }
-    .seed-link {
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      align-items: center;
-    }
-    .seed-link:hover h2 {
-      text-decoration: underline;
-    }
+.seed-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent;
+  margin-right: 20px;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.seed-image:hover {
+  transform: scale(1.05);
+}
+
+.text-content {
+  flex: 1;
+}
+
+.title-link {
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}
+
+.excerpt {
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
+
   </style>
 </head>
 <body>
 
-  <a href="ehrlichkeit.html" class="seed-link">
-    <div class="seed-container">
-      <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit" class="seed-image" />
-      <div class="seed-text">
-        <h2>Ehrlichkeit</h2>
-        <p>Wir reden so oft von ihr – dieser allseits bejubelten Tugend: Ehrlichkeit. Ein großes Wort, glänzend und klar wie der Deckel einer Keksdose ...</p>
-      </div>
-    </div>
+ <div class="preview-box">
+  <a href="ehrlichkeit.html">
+    <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit Bild" class="seed-image" />
   </a>
+  <div class="text-content">
+    <a href="ehrlichkeit.html" class="title-link">Ehrlichkeit</a>
+    <p class="excerpt">„Ein großes Wort, glänzend und klar – wie der Deckel einer Keksdose...“</p>
+  </div>
+</div>
 
 </body>
 </html>
