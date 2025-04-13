@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gedankensamen</title>
   <style>
     body {
       font-family: Georgia, serif;
-      background-color: #fefdf9;
-      color: #1a1a1a;
-      text-align: center;
-      padding: 40px;
+      background-color: #fdfaf5;
+      color: #2e2e2e;
+      padding: 2em;
     }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 50px;
+    .seed-container {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto 3em auto;
+      background-color: transparent;
     }
-
-    .thought-card {
-      display: inline-block;
-      text-align: center;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .thought-card:hover {
-      transform: scale(1.03);
-    }
-
-    .thought-card img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
+    .seed-image {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      margin-bottom: 15px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-right: 1.5em;
     }
-
-    .thought-title {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #333;
+    .seed-text {
+      flex: 1;
     }
-
-    a {
+    .seed-text h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .seed-text p {
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: 0.4em;
+      color: #555;
+    }
+    .seed-link {
       text-decoration: none;
       color: inherit;
+      display: flex;
+      align-items: center;
+    }
+    .seed-link:hover h2 {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <h1>Gedankensamen</h1>
-
-  <a href="ehrlichkeit.html">
-    <div class="thought-card">
-      <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit Bild" />
-      <div class="thought-title">Ehrlichkeit</div>
-   
+  <a href="ehrlichkeit.html" class="seed-link">
+    <div class="seed-container">
+      <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit" class="seed-image" />
+      <div class="seed-text">
+        <h2>Ehrlichkeit</h2>
+        <p>Wir reden so oft von ihr – dieser allseits bejubelten Tugend: Ehrlichkeit. Ein großes Wort, glänzend und klar wie der Deckel einer Keksdose ...</p>
+      </div>
+    </div>
   </a>
 
 </body>
