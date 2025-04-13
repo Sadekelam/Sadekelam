@@ -6,10 +6,10 @@
   <title>Gedankensamen</title>
   <style>
     .preview-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  padding: 10px;
+  ...
+  margin: 50px auto;
+  max-width: 800px;
+
 }
 
 .seed-image {
@@ -23,8 +23,10 @@
   transition: transform 0.3s ease;
 }
 
-.seed-image:hover {
-  transform: scale(1.05);
+.seed-image {
+  ...
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text-content {
@@ -38,15 +40,14 @@
   font-weight: bold;
 }
 
-.title-link:hover {
-  text-decoration: underline;
+.title-link {
+  color: #6b4f3b; 
 }
 
 .excerpt {
-  font-style: italic;
-  color: #777;
-  margin-top: 5px;
+  color: #a07f63; 
 }
+
 
   </style>
 </head>
