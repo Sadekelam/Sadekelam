@@ -1,79 +1,137 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sadekelâm</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=EB+Garamond&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'EB Garamond', serif;
-      background-color: #fdfcf9;
-      color: #2c2c2c;
-      text-align: center;
-      padding: 2rem;
-    }
-    nav {
-      background-color: rgba(255, 255, 255, 0.9);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      font-size: 1.1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    nav a {
-      color: #5f4b32;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      color: #8c6e52;
-    }
-    .title {
-      font-family: 'Great Vibes', cursive;
-      font-size: 3.5rem;
-      margin-top: 6rem;
-      color: #5a3e2b;
-    }
-    .subtitle {
-      font-size: 1.2rem;
-      font-style: italic;
-      margin-top: -1rem;
-      color: #7c6751;
-    }
-    .intro {
-      max-width: 800px;
-      margin: 3rem auto;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #3a2c20;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadekelam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f1ea;
+            font-family: 'Cardo', serif;
+            margin: 0;
+            padding: 0;
+            color: #4a3f35;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+
+        h1::after {
+            content: '̂'; /* Das Hütchen :) */
+            font-size: 0.5em;
+            vertical-align: super;
+        }
+
+        .subtitle {
+            font-style: italic;
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #7d6a58;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .button-container a {
+            background-color: #7d6a58;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1em;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #ece2d9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .box h2 {
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .contact-box {
+            max-width: 280px;
+            text-align: center;
+        }
+
+        .contact-box img {
+            width: 30px;
+            margin-top: 10px;
+        }
+
+        a.email-link {
+            text-decoration: none;
+            color: #4a3f35;
+            font-style: italic;
+        }
+
+        @media screen and (max-width: 700px) {
+            .flexbox {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .contact-box {
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="gedankensamen.html">Gedankensamen</a>
-    <a href="zurueckfluestern.html">Zurückflüstern</a>
-  </nav>
+    <div class="container">
+        <div class="button-container">
+            <a href="gedankensamen.html">Gedankensamen stöbern</a>
+        </div>
 
-  <h1 class="title">Sadekelâm</h1>
-  <div class="subtitle">Das Notizbuch eines Herzens</div>
+        <div class="center">
+            <h1>Sadekelam</h1>
+            <p class="subtitle">das Notizbuch eines Herzens</p>
+        </div>
 
-  <div class="intro">
-    <p>Willkommen – oder vielleicht; Dein Dasein schmückt meine Freude umrahmt von Seligkeit – zu wissen, dass dein Weg dich hierher trug – ob durch Zufall oder vielleicht soll es so sein. Durch das leise Ziehen unsichtbarer Fäden, die das Herz kennt, bevor der Verstand es begreift.</p>
+        <div class="flexbox">
+            <div class="box">
+                <h2>Willkommen</h2>
+                <p>Dies ist ein Ort, an dem Worte wie Wasser fließen, frei von Form und Pflicht. Sie sind geschrieben für jene, die den Mut besitzen, zu fühlen, was sonst verborgen bleibt – das eigene Herz, das leise Seufzen des Seins, den bittersüßen Geschmack einer Welt, die wir selbst erschaffen und allzu oft vergessen zu lieben. Ein kleines Heftchen, aufgeschlagen, wenn das Herz sich regt. Ein Notizbuch – nein, eine Zuflucht aus Tinte und Licht. Ein Ort, der inmitten des Lärms dieser bunten, zu grellen, zu schnellen Welt den sanften Klang der Stille bewahrt – wo ruhige Seelen sich finden und laute Seelen vielleicht heilen. Freue mich wenn ich dir "Gedankensamen" setzen kann, die vielleicht, mit ganz viel Glück meinerseits, bilden einen Blumenkranz der dann ist deins. So blättere ein wenig, verirre dich in Zeilen, lausche dem, was zwischen den Worten wohnt. Vielleicht entdeckst du dich, in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch.</p>
+            </div>
 
-    <p>Dies ist ein Ort, an dem Worte wie Wasser fließen, frei von Form und Pflicht. Sie sind geschrieben für jene, die den Mut besitzen, zu fühlen, was sonst verborgen bleibt – das eigene Herz, das leise Seufzen des Seins, den bittersüßen Geschmack einer Welt, die wir selbst erschaffen und allzu oft vergessen zu schätzen.</p>
-
-    <p>Ein kleines Heftchen, aufgeschlagen, wenn das Herz sich regt. Ein Notizbuch – nein, eine Zuflucht aus Tinte und Licht. Ein Ort, der inmitten des Lärms dieser bunten, zu grellen, zu schnellen Welt den sanften Klang der Stille bewahrt – wo ruhige Seelen sich finden und laute Seelen vielleicht heilen.</p>
-
-    <p>Freue mich, wenn ich dir "Gedankensamen" setzen kann, die vielleicht, mit ganz viel Glück meinerseits, einen Blumenkranz bilden – der dann ist dein. So blättere ein wenig, verirre dich in Zeilen, lausche dem, was zwischen den Worten wohnt. Vielleicht entdeckst du dich – in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch.</p>
-  </div>
+            <div class="box contact-box">
+                <h2>Zurückflüstern</h2>
+                <p>Manchmal möchte das Herz etwas sagen. Einen Gedanken teilen, ein Echo schicken, oder einfach nur anklopfen.</p>
+                <p>Wenn du etwas teilen möchtest – einen Gruß, ein Gefühl, ein stilles „Ich war da“ – darfst du mir flüstern, wann immer dir danach ist.</p>
+                <p><a class="email-link" href="mailto:sadekelam@icloud.com">sadekelam@icloud.com</a></p>
+                <a href="https://www.instagram.com/sadekelam/" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
