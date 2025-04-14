@@ -2,100 +2,89 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Gedankensamen</title>
+  <title>Gedankensamen – Sadekelâm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #fefdf9;
-      font-family: "Georgia", serif;
-      color: #333;
+      font-family: 'Cardo', serif;
       margin: 0;
-      padding: 0;
+      background-color: #f9f5f0;
+      color: #4a3b2d;
     }
 
-    header {
-      text-align: center;
-      padding: 50px 20px 10px;
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
     }
 
-    header h1 {
-      font-weight: normal;
-      font-size: 36px;
-      margin: 0;
-    }
-
-    header p {
-      font-style: italic;
-      color: #777;
-      margin-top: 10px;
-      font-size: 18px;
-    }
-
-    .preview-container {
+    .thought-box {
       display: flex;
       align-items: center;
-      margin: 50px auto;
-      max-width: 800px;
+      gap: 20px;
+      background-color: #fff7ed;
       padding: 20px;
-      border-radius: 8px;
-      background-color: #fffefb;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .preview-container img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 30px;
-      border: 1px solid #ddd;
-    }
-
-    .preview-text {
-      flex: 1;
-    }
-
-    .preview-text h2 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      color: #555;
-    }
-
-    .preview-text p {
-      margin: 0;
-      font-style: italic;
-      color: #888;
-    }
-
-    .preview-container:hover {
-      background-color: #f7f5ee;
-      transition: background-color 0.3s ease;
+      border-radius: 12px;
+      transition: background-color 0.3s;
       cursor: pointer;
-    }
-
-    a {
       text-decoration: none;
       color: inherit;
     }
 
+    .thought-box:hover {
+      background-color: #f1e3d3;
+    }
+
+    .thought-box img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: transparent;
+    }
+
+    .thought-text h2 {
+      margin: 0;
+      font-size: 1.4em;
+    }
+
+    .thought-text p {
+      margin: 5px 0 0;
+      font-style: italic;
+      font-size: 0.9em;
+      color: #6a5845;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 16px;
+      background-color: #fff7ed;
+      color: #4a3b2d;
+      border: 1px solid #d2c1b0;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #f1e3d3;
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Gedankensamen</h1>
-    <p>Ein Garten klein und fein, wo Gedankensamen keimen</p>
-  </header>
-
-  <!-- Vorschaubox zu Ehrlichkeit -->
-  <a href="ehrlichkeit.html">
-    <div class="preview-container">
-       <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit Bild" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-right: 30px;">
-      <div class="preview-text">
+  <div class="container">
+    <a href="ehrlichkeit.html" class="thought-box">
+      <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit">
+      <div class="thought-text">
         <h2>Ehrlichkeit</h2>
         <p>„Ein großes Wort, glänzend und klar wie der Deckel einer Keksdose…“</p>
       </div>
-    </div>
-  </a>
+    </a>
+
+    <a href="index.html" class="back-button">Zurück zur Startseite</a>
+  </div>
 
 </body>
 </html>
