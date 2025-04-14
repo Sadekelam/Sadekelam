@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehrlichkeit</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Cardo', serif;
-            background-color: #f6f4f0;
-            color: #3e3e3e;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fefefe;
-            border: 1px solid #e0deda;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.4em;
-            margin-bottom: 20px;
-        }
-        .image {
-            display: block;
-            margin: 0 auto 30px auto;
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .button {
-            background-color: #3e3e3e;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 6px;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #5c5c5c;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ehrlichkeit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cardo', serif;
+      background-color: #f6f4f0;
+      color: #3e3e3e;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .text-box {
+      background-color: #fdfcf8;
+      border: 1px solid #dcd5c7;
+      border-radius: 10px;
+      padding: 40px;
+      max-width: 700px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      background-color: #3e3e3e;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      font-size: 1em;
+    }
+
+    .button:hover {
+      background-color: #5c5c5c;
+    }
+
+    @media screen and (max-width: 600px) {
+      .text-box {
+        padding: 25px;
+      }
+      p {
+        font-size: 1.05em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ehrlichkeit</h1>
-        <img src="Gedankensamen/images/ehrlichkeit.jpg" alt="Ehrlichkeit Bild" class="image">
+  <div class="wrapper">
+    <div class="text-box">
+     
+     <img src="Gedankensamen/images/ehrlichkeit.jpg" alt="Ehrlichkeit Bild" class="image">
 
-        <p>Wir reden so oft von ihr – dieser allseits bejubelten Tugend:  Ehrlichkeit.  Ein großes Wort, glänzend und klar  wie der Deckel einer Keksdose, unter dem so oft jedoch nur Krümel kleben.</p>
+      <h1>Ehrlichkeit</h1>
 
-        <p>Ehrlich zu anderen? Ja, das klingt edel, wie ein im Wind wehender Banner über unserem Kopf.  Doch wann, frage ich dich (und mich), sind wir eigentlich wirklich ehrlich zu uns selbst?</p>
+      <p>Wir reden so oft von ihr – dieser allseits bejubelten Tugend:  Ehrlichkeit.  Ein großes Wort, glänzend und klar  wie der Deckel einer Keksdose,  unter dem so oft jedoch nur Krümel kleben.</p>
 
-        <p>Ehrlich in all ihrer nackten Wahrheit?  Ohne Feigenblatt, ohne „aber“ und „weil“?  Beginnend bei den guten Eigenschaften, die wir zu besitzen glauben –  ja, ich schreibe bewusst glauben, denn oft ist es nur der Verstand, der dort ruft: „Schau, wie gütig du bist!“  Während die Handlung in der Ecke sitzt und schweigt.</p>
+      <p>Ehrlich zu anderen? Ja, das klingt edel,  wie ein im Wind wehender Banner über unserem Kopf.  Doch wann, frage ich dich (und mich),  sind wir eigentlich wirklich ehrlich zu uns selbst?</p>
 
-        <p>Wenn wir dann erkennen –  Nackenklatsche, das war wohl doch nur ein hübscher Titel auf einer leeren Seite –  kommt die Frage, die piekst wie ein Dorn in der heiligen Brusttasche:  Sind wir ehrlich genug, um daran etwas zu ändern und mutig genug zugleich?</p>
+      <p>Ehrlich in all ihrer nackten Wahrheit?  Ohne Feigenblatt, ohne „aber“ und „weil“?  Beginnend bei den guten Eigenschaften, die wir zu besitzen glauben –  ja, ich schreibe bewusst glauben,  denn oft ist es nur der Verstand, der dort ruft: „Schau, wie gütig du bist!“  Während die Handlung in der Ecke sitzt und schweigt.</p>
 
-        <p>Wir kennen sie doch, die goldenen Worte, die man sich an Kühlschränke klebt, oft mit Staub übersäht:  Sei ein guter Mensch. Sei liebevoll. Sei Licht. Love is Love.Trallala bla bla.  Doch hoppla – da ist er wieder, der ehrliche Schritt, des wahren „Ichs“, der uns durch Pfützen tritt und über Stolpersteine aus Eigensinn Küsschen gibt.</p>
+      <p>Wenn wir dann erkennen –  Nackenklatsche, das war wohl doch nur ein hübscher Titel auf einer leeren Seite –  kommt die Frage,  die piekst wie ein Dorn in der heiligen Brusttasche:  Sind wir ehrlich genug, um daran etwas zu ändern und mutig genug zugleich?</p>
 
-        <p>Es ist eine mühsame, fransige Fitzelarbeit –  im Alltag, in den winzigen Momenten, zu erkennen, wie „gut“ wir wirklich sind.  Und wie viel davon bloß gut gemeint.</p>
+      <p>Wir kennen sie doch, die goldenen Worte,  die man sich an Kühlschränke klebt, oft mit Staub übersäht:  Sei ein guter Mensch. Sei liebevoll. Sei Licht. Love is Love. Trallala bla bla.  Doch hoppla – da ist er wieder,  der ehrliche Schritt, des wahren „Ichs“,  der uns durch Pfützen tritt  und über Stolpersteine aus Eigensinn Küsschen gibt.</p>
 
-        <p>Denn dieser Weg bringt Emotionen hervor, schwerer als die Konsequenzen unserer Taten es sind.  Scham. Wut. Traurigkeit.  Oder das kleine schüchterne Gefühl:  „Shit, ich dachte, ich wär weiter.“ - das wir eher schweigend ersticken, als mit unserem Sein vereinen.</p>
+      <p>Es ist eine mühsame, fransige Fitzelarbeit –  im Alltag, in den oft winzigen Momenten,  zu erkennen,  wie „gut“ wir wirklich sind.  Und wie viel davon bloß gut gemeint.</p>
 
-        <p>Und so schließt sich der Kreis –  die Ehrlichkeit uns selbst gegenüber  ist kein gläserner Pokal im Regal, sie ist der schmutzige Spiegel  im Bad, nach dem Waschen des Gesichts - mit der Wahrheit bespritzt.</p>
+      <p>Denn dieser Weg bringt Emotionen hervor,  schwerer als die Konsequenzen unserer Taten es sind.  Scham. Wut. Traurigkeit.  Oder das kleine schüchterne Gefühl:  „Shit, ich dachte, ich wär weiter als dunkles Kraut.“ - das wir eher schweigend ersticken, als mit unserem Sein vereinen.</p>
 
-        <p>So wie jener Satz:  „Wer sich selbst nicht liebt, kann andere nicht wirklich lieben.“  Gilt auch hier:  Nur wer mutig genug ist, seine eigenen Schatten zu küssen, kann Ehrlichkeit in ihrer wahren Schönheit schenken und das hoffentlich auf Ewigkeit.</p>
+      <p>Und so schließt sich der Kreis –  die Ehrlichkeit uns selbst gegenüber  ist kein gläserner Pokal im Regal,  sie ist der schmutzige Spiegel  im Bad, nach dem Waschen des Gesichts - mit der Wahrheit bespritzt.</p>
 
-        <div class="button-container">
-            <a href="index.html" class="button">Zurück zur Startseite</a>
-            <a href="gedankensamen.html" class="button">Zurück zu Gedankensamen</a>
-        </div>
+      <p>So wie jener Satz:  „Wer sich selbst nicht liebt, kann andere nicht wirklich lieben.“  Gilt auch hier:  Nur wer mutig genug ist,  seine eigenen Schatten zu küssen,  kann Ehrlichkeit in ihrer wahren Schönheit schenken und das hoffentlich auf Ewigkeit.</p>
+
+      <div class="button-container">
+        <a href="index.html" class="button">Zurück zur Startseite</a>
+        <a href="gedankensamen.html" class="button">Zurück zu Gedankensamen</a>
+      </div>
     </div>
+  </div>
 </body>
 </html>
