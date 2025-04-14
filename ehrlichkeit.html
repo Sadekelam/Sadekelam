@@ -42,17 +42,27 @@
     }
 
     .image-container {
-      max-width: 100%;
-      margin: 30px 0 10px 5%;
-    }
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10% 20px 10%;
+  background: none;
+  border: none;
+}
 
-    .image-container img {
-      width: 40%;
-      max-width: 250px;
-      border: none;
-      border-radius: 50%;
-      opacity: 0.95;
-    }
+.image-container img {
+  width: 35%;
+  max-width: 220px;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.97;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);
+}
+
 
     .text-container {
       background-color: #f9f1e7;
