@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>seelenruf</title>
+  <title>Seelenruf</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
@@ -40,6 +40,20 @@
       color: #4b3621;
     }
 
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
     .text-container {
       background-color: #f9f1e7;
       border-radius: 15px;
@@ -59,37 +73,65 @@
       color: #6c4a3f;
       font-size: 1em;
     }
+
+    /* Nach oben Button */
+    .top-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #7d5a50;
+      color: #fffaf0;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .top-button:hover {
+      background-color: #a07a68;
+    }
   </style>
 </head>
 <body>
 
   <div class="button-container">
     <a href="index.html">Startseite</a>
-    <a href="gedankensamen.html">Gedankensamen</a>
+    <a href="Sadekelam/gedankensamen.html">Gedankensamen</a>
   </div>
 
   <h1>Seelenruf</h1>
 
-  <div class="text-container">
-   
-  Vielleicht kennt man es ja, die Seele die einen hin und wieder zwickt. Manchmal sogar, eine Qual, wenn man erkennt was alles noch nicht sitzt. 
+  <div class="image-container">
+    <img src="Gedankensamen/images/seelenruf.png" alt="Seelenruf">
+  </div>
 
+  <div class=„text-container">
+
+  Vielleicht kennt man es ja, die Seele die einen hin und wieder zwickt. Manchmal sogar, eine Qual, wenn man erkennt was alles noch nicht sitzt. 
+  
   Sie ruft in unmöglichen Momenten, wenn Leid und Tränen strömen wie Flüsse die nicht wollen enden. 
   Dann macht sie sich besonders gern bemerkbar und des Menschen sein Leib, ruft hilflos „lass es sein“! 
   Doch genau hier ist eigentlich, die duftende Seife die bekannte Grenzen bricht. 
-
+  
   Auch wenn das Leib schreit und darum bittet „Jetzt nicht“ - Die Freiheit ist das goldene Geschenk, die der Mut zur Einsicht mit sich bringt. 
-
+  
   Wollen wir die Seele nicht zu sehr rücken in ein schlechtes Licht. 
   Auch sind es Momente der Liebe zum füllen des Lebens und zur Liebe für sich. 
   Wenn der Moment der uns Fülle gibt anbricht, nährt sich die Seele und das Menschenkind. 
+  
+  Hinhören ohne Angst und die Haltung großer Erwartungen, in der Stille spricht sie nämlich am lautesten.  
 
-  Hinhören ohne Angst und die Haltung großer Erwartungen, in der Stille spricht sie nämlich am lautesten. 
   </div>
 
   <div class="footer-quote">
     "Hier endet der Gedanke, aber nicht die Reise."
   </div>
+
+  <button class="top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
 
 </body>
 </html>
