@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadekelâm</title>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
             background-color: #f7f1ea;
@@ -27,7 +28,6 @@
         h1 {
             font-size: 3em;
             margin-bottom: 0;
-       
         }
 
         .subtitle {
@@ -49,6 +49,11 @@
             padding: 12px 25px;
             border-radius: 30px;
             font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #a08a77;
         }
 
         .flexbox {
@@ -78,8 +83,13 @@
         }
 
         .contact-box img {
-            width: 30px;
-            margin-top: 10px;
+            width: 40px;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-box img:hover {
+            transform: scale(1.15);
         }
 
         a.email-link {
@@ -96,6 +106,19 @@
 
             .contact-box {
                 margin-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .button-container a {
+                display: inline-block;
+                width: 90%;
+                padding: 14px 20px;
+                font-size: 1.2em;
+            }
+
+            .contact-box img {
+                width: 45px;
             }
         }
     </style>
@@ -121,7 +144,7 @@
                 <p>Freue mich wenn ich dir "Gedankensamen" setzen kann, die vielleicht, mit ganz viel Glück meinerseits, bilden einen Blumenkranz der dann ist deins.</p>
                 <p>So blättere ein wenig, verirre dich in Zeilen, lausche dem, was zwischen Wort und Gefühl verweilt.</p>
                 <p>Vielleicht entdeckst du dich, in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch und bleibst.</p>
-         </div>
+            </div>
             
             <div class="box contact-box">
                 <h2>Zurückflüstern</h2>
