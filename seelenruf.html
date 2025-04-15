@@ -74,28 +74,35 @@
       font-size: 1em;
     }
 
-    /* Zurück-nach-oben Button */
-    .back-to-top {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background-color: #7d5a50;
-      color: #fffaf0;
-      text-decoration: none;
-      font-size: 1.5em;
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
     }
 
-    .back-to-top:hover {
-      background-color: #a07a68;
+    .scroll-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #7d5a50;
+      color: #fffaf0;
+      font-size: 22px;
+      padding: 12px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+      transition: background-color 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #a07a68;
+  
+    }
+    
   </style>
 </head>
 <body>
@@ -160,7 +167,26 @@ und zwickt uns nicht.
 die Seele ruft, auf ihre eigne Weise.“"
   </div>
 
-  <a href="#" class="back-to-top">↑</a>
+  <a href="#" class="scroll-to-top" id="scrollToTopBtn">&#8679;</a>
 
+  <script>
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 </html>
