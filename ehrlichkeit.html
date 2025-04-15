@@ -52,15 +52,25 @@
     .image-container img {
       width: 35%;
       max-width: 220px;
-      border: none !important;  /* <- mit wichtigem Nachdruck! */
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
       border-radius: 50%;
       opacity: 0.97;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease;
+
     }
 
     .image-container img:hover {
       transform: scale(1.03);
+    }
+
+     a img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+       
     }
 
     .text-container {
@@ -74,6 +84,7 @@
       font-size: 1.1em;
       white-space: pre-line;
     }
+
   </style>
 </head>
 <body>
