@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gedankensamen – Sadekelâm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
   <style>
     body {
@@ -20,6 +21,7 @@
 
     .thought-box {
       display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 20px;
       background-color: #fff7ed;
@@ -42,6 +44,7 @@
       border-radius: 50%;
       object-fit: cover;
       background-color: transparent;
+      flex-shrink: 0;
     }
 
     .thought-text h2 {
@@ -70,6 +73,28 @@
 
     .back-button:hover {
       background-color: #f1e3d3;
+    }
+
+    /* Mobile-Optimierung */
+    @media (max-width: 600px) {
+      .thought-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .thought-box img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+      }
+
+      .thought-text h2 {
+        font-size: 1.2em;
+      }
+
+      .thought-text p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
