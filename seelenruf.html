@@ -74,24 +74,26 @@
       font-size: 1em;
     }
 
-    /* Nach oben Button */
-    .top-button {
+    /* Zurück-nach-oben Button */
+    .back-to-top {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
+      bottom: 25px;
+      right: 25px;
       background-color: #7d5a50;
       color: #fffaf0;
-      border: none;
-      border-radius: 50%;
+      text-decoration: none;
+      font-size: 1.5em;
       width: 45px;
       height: 45px;
-      font-size: 1.2em;
-      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
     }
 
-    .top-button:hover {
+    .back-to-top:hover {
       background-color: #a07a68;
     }
   </style>
@@ -131,7 +133,7 @@ Hinhören ohne Angst und die Haltung großer Erwartungen, in der Stille spricht 
     "Hier endet der Gedanke, aber nicht die Reise."
   </div>
 
-  <button class="top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+  <a href="#" class="back-to-top">↑</a>
 
 </body>
 </html>
