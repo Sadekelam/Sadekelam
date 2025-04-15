@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ehrlichkeit</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap');
 
@@ -73,11 +73,9 @@
       font-family: 'Swanky and Moo Moo', cursive;
       color: #7d5a50;
       font-size: 1.6em;
-      max-width: 400px;
       text-align: center;
       line-height: 1.6;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0 20px;
     }
 
     .text-container {
@@ -98,14 +96,20 @@
       right: 30px;
       background-color: #7d5a50;
       color: #fffaf0;
-      font-size: 28px;
-      padding: 10px 15px;
+      font-size: 22px;
+      padding: 12px 15px;
       border-radius: 50%;
       text-decoration: none;
-      display: none;
+      opacity: 0;
+      visibility: hidden;
       z-index: 1000;
-      transition: background-color 0.3s ease, opacity 0.3s ease;
+      transition: background-color 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
     }
 
     .scroll-to-top:hover {
@@ -121,12 +125,11 @@
 
   <h1>Ehrlichkeit</h1>
 
-  <!-- Bild + Zitat nebeneinander -->
   <div class="image-quote-wrapper">
-    <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit Bild">
+    <img src="Gedankensamen/images/ehrlichkeit.png" alt="Ehrlichkeit Bild" />
     <div class="quote-container">
       <p class="quote-text">
-        Ehrlichkeit ist, mit Feinheit und Liebe geschmückt,<br>
+        Ehrlichkeit ist, mit Feinheit und Liebe geschmückt,<br />
         der Menschen Seele, auf dunklen Wegen weisendes Licht.
       </p>
     </div>
@@ -197,20 +200,20 @@
     und das hoffentlich auf Ewigkeit.
   </div>
 
-  <!-- 🠗 Schönschrift-Pfeil eingefügt -->
-  <a href="#" class="scroll-to-top">↑</a>
+  <a href="#" class="scroll-to-top" id="scrollToTopBtn">&#8679;</a>
+
   <script>
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
-        scrollToTopButton.style.display = 'block';
+        scrollToTopBtn.classList.add('visible');
       } else {
-        scrollToTopButton.style.display = 'none';
+        scrollToTopBtn.classList.remove('visible');
       }
     });
 
-    scrollToTopButton.addEventListener('click', (e) => {
+    scrollToTopBtn.addEventListener('click', function(e) {
       e.preventDefault();
       window.scrollTo({
         top: 0,
