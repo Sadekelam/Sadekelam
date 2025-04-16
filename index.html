@@ -1,93 +1,163 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sadekelâm</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Cardo', serif;
-      margin: 0;
-      background-color: #f9f5f0;
-      color: #4a3b2d;
-      padding: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadekelâm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f7f1ea;
+            font-family: 'Cardo', serif;
+            margin: 0;
+            padding: 0;
+            color: #4a3f35;
+        }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
 
-    h1 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
+        .center {
+            text-align: center;
+        }
 
-    h2 {
-      font-size: 1.5em;
-      margin-top: 1.5em;
-    }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+        }
 
-    p {
-      line-height: 1.6;
-      margin-bottom: 1em;
-    }
+        .subtitle {
+            font-style: italic;
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #7d6a58;
+        }
 
-    .zurueckfluestern {
-      background-color: #fff7ed;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 40px;
-      text-align: center;
-    }
+        .button-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-    .zurueckfluestern h2 {
-      margin-top: 0;
-    }
+        .button-container a {
+            background-color: #7d6a58;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
 
-    .zurueckfluestern p {
-      margin-bottom: 1em;
-    }
+        .button-container a:hover {
+            background-color: #a08a77;
+        }
 
-    .zurueckfluestern a {
-      color: #4a3b2d;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        .flexbox {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
+        .box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #ece2d9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
 
-      .zurueckfluestern {
-        padding: 15px;
-      }
-    }
-  </style>
+        .box h2 {
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .contact-box {
+            max-width: 280px;
+            text-align: center;
+        }
+
+        .contact-box img {
+            width: 60px;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+
+
+        }
+
+        .contact-box img:hover {
+            transform: scale(1.15);
+        }
+
+        a.email-link {
+            text-decoration: none;
+            color: #4a3f35;
+            font-style: italic;
+        }
+
+        @media screen and (max-width: 700px) {
+            .flexbox {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .contact-box {
+                margin-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .button-container a {
+                display: inline-block;
+                width: 90%;
+                padding: 14px 20px;
+                font-size: 1.2em;
+            }
+
+            .contact-box img {
+                width: 45px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Sadekelâm</h1>
-    <p><em>das Notizbuch einer freien Feder</em></p>
+    <div class="container">
+        <div class="button-container">
+            <a href="gedankensamen.html">Gedankensamen stöbern</a>
+        </div>
 
-    <h2>Willkommen</h2>
-    <p>Dies ist ein Ort, an dem Worte wie Wasser fließen, frei von Form und Pflicht.</p>
-    <p>Sie sind geschrieben für jene, die den Mut besitzen, zu fühlen, was sonst verborgen im Dunklen sitzt – das eigene Herz, das leise Seufzen des Seins, den bittersüßen Geschmack einer Welt, die wir selbst erschaffen und allzu oft vergessen zu lieben wirklich rein.</p>
-    <p>Ein kleines Heftchen, aufgeschlagen, wenn das Herz sich regt. Ein Notizbuch – eine Zuflucht aus Tinte und Licht.</p>
-    <p>Ein Ort, der inmitten des Lärms dieser bunten, oft zu grellen, zu schnellen Welt den sanften Klang der Stille bewahrt – wo ruhige Seelen sich finden und laute Seelen vielleicht heilen.</p>
-    <p>Freue mich, wenn ich dir "Gedankensamen" setzen kann, die vielleicht, mit ganz viel Glück meinerseits, einen Blumenkranz bilden, der dann deins ist.</p>
-    <p>So blättere ein wenig, verirre dich in Zeilen, lausche dem, was zwischen Wort und Gefühl verweilt.</p>
-    <p>Vielleicht entdeckst du dich in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch – und bleibst.</p>
+        <div class="center">
+            <h1>Sadekelâm</h1>
+            <p class="subtitle">das Notizbuch einer freien Feder</p>
+        </div>
 
-    <div class="zurueckfluestern">
-      <h2>Zurückflüstern</h2>
-      <p>Manchmal möchte das Herz etwas sagen. Einen Gedanken teilen, ein Echo schicken oder einfach nur anklopfen.</p>
-      <p>Wenn du etwas teilen möchtest – einen Gruß, ein Gefühl, ein stilles „Ich war da“ – darfst du mir flüstern, wann immer dir danach ist.</p>
-      <p><a href="mailto:sadekelam@icloud.com">sadekelam@icloud.com</a></p>
+        <div class="flexbox">
+            <div class="box">
+                <h2>Willkommen</h2>
+                <p>Dies ist ein Ort, an dem Worte wie Wasser fließen, frei von Form und Pflicht. 
+                <p>Sie sind geschrieben für jene, die den Mut besitzen, zu fühlen, was sonst verborgen im dunklen sitzt – das eigene Herz, das leise Seufzen des Seins, den bittersüßen Geschmack einer Welt, die wir selbst erschaffen und allzu oft vergessen zu lieben wirklich rein.</p>
+                <p>Ein kleines Heftchen, aufgeschlagen, wenn das Herz sich regt. Ein Notizbuch – eine Zuflucht aus Tinte und Licht.</p>
+                <p>Ein Ort, der inmitten des Lärms dieser bunten, oft zu grellen, zu schnellen Welt den sanften Klang der Stille bewahrt – wo ruhige Seelen sich finden und laute Seelen vielleicht heilen.</p>
+                <p>Freue mich wenn ich dir "Gedankensamen" setzen kann, die vielleicht, mit ganz viel Glück meinerseits, bilden einen Blumenkranz der dann ist deins.</p>
+                <p>So blättere ein wenig, verirre dich in Zeilen, lausche dem, was zwischen Wort und Gefühl verweilt.</p>
+                <p>Vielleicht entdeckst du dich, in vertrauten Worten, einem Bild, einem kaum hörbaren Hauch und bleibst.</p>
+            </div>
+            
+            <div class="box contact-box">
+                <h2>Zurückflüstern</h2>
+                <p>Manchmal möchte das Herz etwas sagen. Einen Gedanken teilen, ein Echo schicken, oder einfach nur anklopfen.</p>
+                <p>Wenn du etwas teilen möchtest – einen Gruß, ein Gefühl, ein stilles „Ich war da“ – darfst du mir flüstern, wann immer dir danach ist.</p>
+                <p><a class="email-link" href="mailto:sadekelam@icloud.com">sadekelam@icloud.com</a></p>
+                <a href="https://www.instagram.com/sadekelam/" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
